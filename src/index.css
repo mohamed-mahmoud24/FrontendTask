@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+.table {
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    border: 3px solid #eee;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+.table tbody tr {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.table tbody tr:hover {
+    transform: scale(1.1);
+    background-color: #eee;
+}
+
+.table th,
+.table td {
+    border-inline: 0;
+    border-block: 2px solid #eee;
+    padding: 0.5rem;
+}
+
+.selected {
+    background-color: #eee;
+}
+
+.filter {
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    gap: 3rem;
+    margin-block: 1.5rem;
+}
+
+.filter input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 0;
+    border-bottom: 2px solid #999999;
+}
+
+.filter input:focus-visible {
+    outline: 0;
+    border-color: #000000;
+}
+
+.chart-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 1.5rem;
+}
+
+.chart-type button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #000;
+    border-radius: 50px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.chart-type button:hover , .chart-type button.active {
+    color: #fff;
+    background-color: #999999;
+    transform: scale(1.2);
+}
