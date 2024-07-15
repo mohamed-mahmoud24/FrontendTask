@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: "https://raw.githubusercontent.com/mohamed-mahmoud24/FrontendTask/master/data/data.json",
+    baseURL: "https://json-server-blush-ten.vercel.app/",
 });
 
 export default axiosInstance;
